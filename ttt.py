@@ -93,16 +93,16 @@ while True:
     play_board = [' ']*10
     
     if(p1name == None or p2name == None):
-        p1name = input('First player please enter your name(1-8 characters): ')[:8]
+        p1name = input('Player1 please enter your name(1-8 characters): ')[:8]
         player1 = Player(p1name)
 
-        p2name = input('Second player please enter your name(1-8 characters) : ')[:8]
+        p2name = input('Player2 please enter your name(1-8 characters) : ')[:8]
         player2 = Player(p2name)
 
     player1_mrkr, player2_mrkr = player_input(player1.name,player2.name)
 
     turn = first_player_choose(player1.name,player2.name)
-    print(turn+' goes first')
+    print(turn+' goes first.')
 
     play = input('Enter Yes(y) for start the game: ')
     if play.lower()[0] == 'y':
